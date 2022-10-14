@@ -61,17 +61,13 @@ export default {
     },
   },
 };
-
-
-
-
 </script>
 
 <style scoped>
   *{
     text-align: center;
     align-items: center;
-    
+    z-index: 0;
 }
 
 h2{
@@ -89,7 +85,7 @@ section{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color:  rgba(165, 42, 42, 0.9 );
+    background-color:  rgba(165, 42, 42, 0.8 );
     box-shadow: 5px 5px 3px;
     border-radius: 10px;
     padding: 70px;

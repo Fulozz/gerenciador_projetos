@@ -52,6 +52,8 @@
             </svg>
           </a>
         </div>
+
+        <p id="copyright">Feito por Thiago Silva Andarde || Outubro 2022 </p>
       </div>
     </footer>
     
@@ -64,17 +66,55 @@
     </script>
     
     <style scoped>
-    #footer{
-        height: 200px;
-        width: 100%;
-        background-color: #222;
-        border-top: 4px solid #111;
-        color: #FCBA03;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top: 72.7   vh;
-        position: relative;
+    *{
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 2rem;
+    color: #FFF;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  rgba(165, 42, 42, 0.8 );
+    box-shadow: 5px 5px 3px;
+    border-radius: 10px;
+    padding: 70px;
+  }
+
+  body{
+    background-color: #fff;
+  }
+
+
+  .incorreto{
+    font: bold;
+    color: #FFF;
+  }
+
+  #footer{
+    height: 200px;
+    width: 100%;
+    background-color: #222;
+    border-top: 4px solid #111;
+    color: #FCBA03;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 71.5vh ;
+    margin-bottom: 0;
     }
     .social-icon{
         color: #fff;
@@ -86,9 +126,9 @@
         color: #FCBA03;
     }
     .social{
-      display: flex;
-      justify-content: center;
-      text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     }
     .foot{
         text-align: center;
@@ -96,6 +136,12 @@
     }
     .contact{
         color:#FCBA03 !important;
+    }
+
+    #copyright{
+    color: #fff;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
     }
     </style>
     

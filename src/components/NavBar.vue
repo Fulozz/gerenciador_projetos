@@ -13,7 +13,7 @@
             <img :src="logo" :alt="alt" id="logo">
             <ul>
                 <li><router-link to="/">Home</router-link></li>
-                <li><router-link to="/about">About</router-link></li>       
+                <li><router-link to="/Calculadora">Calculadora</router-link></li>       
             </ul>
          </div>
             
@@ -27,8 +27,7 @@
 
             <div id="link">
         <router-link to="/">Home</router-link> 
-        <router-link to="/Calculadora">About</router-link>
-       
+        <router-link to="/Calculadora">Calculadora</router-link>
     </div>
   </section>
 </template>
@@ -46,8 +45,7 @@ export default {
     methods: {
         
         //Para chamar função usar o menuFunctions($event) 
-        menuFunctions: function(e){
-            e.preventDefault();
+        menuFunctions: function(){  
             var checkBox = document.getElementById("checkbox");
             if (checkBox.checked == true){
                 this.menuActive = true;
@@ -55,8 +53,7 @@ export default {
                 this.menuActive = false;
             }
         },
-        closeMenu: function(e){
-            e.preventDefault();
+        closeMenu: function(){
             var checkBox = document.getElementById("checkbox").checked = false;
             if( checkBox.checked == false){
                 this.menuActive = false;
@@ -77,6 +74,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 70px;
     }
     #logo{
         width: 40px;
@@ -115,6 +113,7 @@ export default {
             height: 100vh;
             background-color: #000;
             opacity: 0.8;
+            z-index: 1;
         }
         #menu-items{
             position: fixed;
@@ -127,6 +126,7 @@ export default {
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+            z-index: 1;
         }
         
         #menu-items.active{
