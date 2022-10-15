@@ -14,7 +14,7 @@
 </template>
 <script>
 export default {
-  name: 'CalculadoraIdade',
+  name: 'CalculadoraView',
   methods: {
     ageCalculator: ()=>{
       var userinput = document.getElementById("DOB").value;
