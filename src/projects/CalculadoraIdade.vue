@@ -1,14 +1,16 @@
 <template>
-  <section>
-    <div class="child">
-        <h2> Calculadora de idade  </h2> <br> <br>
-        <b > Data de nascimento: <input type="date" id="DOB"> </b>
-        <span id = "message"> </span> <br><br>  
-        <button type="submit" @click = "ageCalculator()" >Calcular idade atual</button>
-        <button type="submit" @click = "limpar()" > Limpar</button> <br><br>
-        <h3 id="result" class="incorreto" align="center" ></h3> 
-    </div>
-  </section>
+  <main>
+    <section>
+      <div class="child">
+          <h2> Calculadora de idade  </h2> <br> <br>
+          <b > Data de nascimento: <input type="date" id="DOB"> </b>
+          <span id = "message"> </span> <br><br>  
+          <button type="submit" @click = "ageCalculator()" >Calcular idade atual</button>
+          <button type="submit" @click = "limpar()" > Limpar</button> <br><br>
+          <h3 id="result" class="incorreto" align="center" ></h3> 
+      </div>
+    </section>
+  </main>
 </template>
 <script>
 export default {
@@ -81,10 +83,9 @@ section{
     align-items: center;
 }
 .child{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    margin-top: 15vh;
+    margin-bottom: 15vh;
     background-color:  rgba(165, 42, 42, 0.8 );
     box-shadow: 5px 5px 3px;
     border-radius: 10px;

@@ -113,8 +113,9 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 71.5vh ;
     margin-bottom: 0;
+    margin-top: 10vh ;
+    padding-bottom: 0;
     }
     .social-icon{
         color: #fff;
@@ -140,7 +141,7 @@ section{
 
     #copyright{
     color: #fff;
-    margin-top: 5px;
+    margin-top: 7px;
     font-family: Arial, Helvetica, sans-serif;
     }
     </style>

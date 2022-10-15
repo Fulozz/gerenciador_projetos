@@ -1,6 +1,6 @@
 <template>  
 <section>
-    <NavBar ></Navbar>
+    <NavBar :logo="logo_src" :alt="app_name" ></Navbar>
       <router-view ></router-view>
     <FooterBar ></FooterBar>
   </section>
@@ -14,7 +14,13 @@ export default {
   components: {
     NavBar,
     FooterBar
-}
+},
+data() {
+    return {
+      logo_src: "/img/logo.png",
+      app_name: "Gerenciador de projetos",
+    }
+  },
 }
 </script>
 <style>
@@ -31,18 +37,6 @@ export default {
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 ::-webkit-scrollbar {
         width: 6px;
         border-left: 1px solid #E6ECF8;
@@ -62,9 +56,5 @@ nav a.router-link-exact-active {
       font-size: 42px;
       margin-bottom: 30px;
       color: #222;
-    }
-    .main-container{
-      margin: 50px;
-      min-height: 250px;
     }
 </style>

@@ -27,7 +27,7 @@
 
             <div id="link">
         <router-link to="/">Home</router-link> 
-        <router-link to="/Calculadora">Calculadora</router-link>
+        <router-link to="/Calculadora" >Calculadora</router-link>
     </div>
   </section>
 </template>
@@ -77,7 +77,7 @@ export default {
         height: 70px;
     }
     #logo{
-        width: 40px;
+        width: 50px;
         height: auto;
     }
     #nav a {
