@@ -48,7 +48,7 @@ export default {
       //get months when current month is greater  
       var monthAge = currentMonth - nascMonth;  }
       else {  
-      this.monthAge = 12 + currentMonth - nascMonth;  
+      monthAge = 12 + currentMonth - nascMonth;  
     }
     //display the calculated age
       document.getElementById("result").style.color = "#32A80F";
