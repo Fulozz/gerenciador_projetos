@@ -28,7 +28,6 @@ export default {
     setTimeout(() => document.getElementById("result").innerHTML =  "", 4500); 
     
     return false; 
-
     } else {
 
     //Calculate the month of the User
